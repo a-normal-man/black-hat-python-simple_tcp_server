@@ -12,7 +12,7 @@ def main():
             request=sock.recv(1042)
             print(f'[*] recived: {request.decode("utf-8")}')
             sock.send(b'ACK')
-            #this one needed to be dfied so i duplicated so it work sorry for being dirty
+            #this one needed to be defined so i duplicated so it work sorry for being dirty
     while True:
         client,address=server.accept()
         print(f'[*]Accepted conection from {address[0]}:{address[1]}')
